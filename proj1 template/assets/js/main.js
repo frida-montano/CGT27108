@@ -13,6 +13,11 @@
 		$nav = $('#nav'),
 		$wrapper = $('#wrapper');
 
+	//buttons
+	document.querySelectorAll(".pill").forEach(pill =>{
+		pill.addEventListener("click", () => pill.classList.toggle("pill--selected"));
+	});
+
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
